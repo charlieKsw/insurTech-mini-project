@@ -37,13 +37,6 @@ npm start
 │   ├── FormSubmit    // Verify forms input - check dataList selected from user & user token from localStorage 
 │   ├── FormResponse  // Success and error message handling
 
-
-## Further Develop Features
-├── Search function
-├── Language options 
-├── Price Calculator
-├── Generate customized plan for different market segment etc...
-
 ## Login username & password
 
 username: admin
