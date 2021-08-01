@@ -12,7 +12,7 @@ import { colors, logo } from '../../config/style';
 const LOGO = `assets/${logo}`;
 
 export const Header = (props: any) => {
-	const { myRef, executeScroll, isAuth, setIsAuth } = props;
+	const { executeScroll, isAuth, setIsAuth } = props;
 	const [ lastNameChar, setLastNameChar ] = useState('A');
 
 	useEffect(() => {

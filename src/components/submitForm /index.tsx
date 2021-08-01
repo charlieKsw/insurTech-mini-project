@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Form as AntdForm, Checkbox, message } from 'antd';
+import { Form as AntdForm, message } from 'antd';
 import { dataSource, dataSource2 } from './mockData';
 
 // Type

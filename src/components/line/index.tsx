@@ -1,8 +1,5 @@
 import React from 'react';
 
-// Style
-import { colors } from '../../config/style';
-
 interface LineProps {
 	color?: string;
 	width?: number | string;

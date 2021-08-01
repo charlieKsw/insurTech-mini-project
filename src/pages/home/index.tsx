@@ -65,7 +65,7 @@ const HomePage = () => {
 			const token = localStorage.getItem('token');
 			token && setIsAuth(true);
 		},
-		[ localStorage, isAuth, setIsAuth ]
+		[ isAuth, setIsAuth ]
 	);
 
 	return (
