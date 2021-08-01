@@ -9,8 +9,8 @@ const BACKGROUND_IMAGE = `assets/${backgroundImg}`;
 interface MainContainerProps {
 	child?: any;
 	styles?: object;
-	isAuth?: any;
-	setIsAuth?: any;
+	isAuth?: boolean;
+	setIsAuth?: Function;
 }
 const scrollToRef = (ref: any) => window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth' });
 
@@ -37,7 +37,6 @@ export const MainContainer = (props: MainContainerProps) => {
 					alignItems: 'center',
 					width: '100vw',
 					height: '100vh',
-					objectFit: 'cover',
 					backgroundSize: 'cover',
 					maxHeight: 520,
 					backgroundRepeat: 'no-repeat',

@@ -7,7 +7,6 @@ import { ButtonHtmlType } from '../button/types';
 
 // Style
 import { Button } from '../';
-import { colors } from '../../config/style';
 import { CustomTable } from './customTable';
 
 interface FormProps {
@@ -72,13 +71,6 @@ export const SubmitForm = (props: FormProps) => {
 					</div>
 					<Button
 						className="form-submit-button"
-						style={{
-							backgroundColor: colors.white,
-							borderColor: colors.tiffanyBlue,
-							color: colors.darkBg,
-							borderRadius: 8,
-							padding: '8px'
-						}}
 						buttonName={submitBtnName}
 						htmlType={submitBtnType}
 						onClick={() => submitForm(formType)}
