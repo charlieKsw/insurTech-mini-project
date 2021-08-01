@@ -21,7 +21,7 @@ npm start
 ```
 
 ## Project Features
-
+```
 ├── Login 
 │   ├── LocalStorage  // Store user token  
 │   ├── Login Api     // Use authStore to callApi
@@ -36,7 +36,7 @@ npm start
 │   ├── SwitchButton  // Customized button to control component
 │   ├── FormSubmit    // Verify forms input - check dataList selected from user & user token from localStorage 
 │   ├── FormResponse  // Success and error message handling
-
+```
 ## Login username & password
 
 username: admin
