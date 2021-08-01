@@ -1,0 +1,33 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	padding: 15px 30px;
+	align-items: center;
+	box-shadow: 4px 1px 4px #dfdfdf;
+	background-color: $tiffanyBlue;
+	background-image: linear-gradient(225deg, $tiffanyBlue 3%, $purple 130%);
+	.avatar {
+		background-color: $background;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.desktop-menu {
+		display: none !important;
+	}
+
+	.mobile-menu {
+		display: flex !important;
+	}
+}
