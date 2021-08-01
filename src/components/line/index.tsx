@@ -22,7 +22,7 @@ export const Line = (props: LineProps) => {
 			<span
 				style={{
 					width: width || 30,
-					backgroundColor: color, //|| colors.text,
+					backgroundColor: color,
 					height: height || 1,
 					...positionStyle
 				}}

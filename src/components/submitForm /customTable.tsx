@@ -2,7 +2,7 @@ import React from 'react';
 import { Table } from 'antd';
 import { dataSource, dataSource2, columns, columns2 } from './mockData';
 
-export interface iForm {
+interface iForm {
 	key?: number | string;
 	name?: string;
 	information?: string;

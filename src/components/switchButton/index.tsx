@@ -16,16 +16,16 @@ export function SwitchButton(props: any) {
 		flex: 1,
 		fontWeight: 'bold',
 		borderWidth: 1,
-		backgroundColor: '#21D4FD',
+		backgroundColor: colors.tiffanyBlue,
 		backgroundImage: 'linear-gradient(225deg, #21D4FD 0%, #B721FF 100%)',
-		borderColor: '#21D4FD'
+		borderColor: colors.tiffanyBlue
 	};
 
 	const inActiveButtonStyle = {
 		flex: 1,
 		color: colors.darkBg,
 		backgroundColor: colors.white,
-		borderColor: '#09daea'
+		borderColor: colors.lightGreen
 	};
 
 	return (

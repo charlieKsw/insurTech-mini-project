@@ -12,7 +12,7 @@ interface MainContainerProps {
 	isAuth?: any;
 	setIsAuth?: any;
 }
-const scrollToRef = (ref: any) => window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth' }); //0, ref.current.offsetTop
+const scrollToRef = (ref: any) => window.scrollTo({ top: ref.current.offsetTop, behavior: 'smooth' });
 
 export const MainContainer = (props: MainContainerProps) => {
 	const { child, styles, isAuth, setIsAuth } = props;
