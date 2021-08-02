@@ -1,4 +1,8 @@
 {
+	"header": {
+		"login-success": "Login Success",
+		"logout-success": "Logout Success"
+	},
 	"home": {
 		"header": "# The 1st Blockchain Medical Ecosystem",
 		"subheader": "All-in-one app solution to get your medical expenses covered",
@@ -7,7 +11,9 @@
 		"login": "Login",
 		"logout": "Logout",
 		"select-country": "Select Country",
-		"get-quote": "Get a quote"
+		"get-quote": "Get a quote",
+		"submit-success": "Submit Success - Our customer support team will contact you soon",
+		"submit-failed": "Submit Failed - Please contact info@gmail.com for further assistance"
 	},
 	"components": {
 		"switch-button-Standard": "Standard",
@@ -38,5 +44,7 @@
 			"footer-note-3": "(3) Except for benefit item supplementary major medical benefit as stated in the Benefit Schedule, all benefits are not subject to any restriction in the choice of ward class in hospital.",
 			"footer-note-4": "(4) MCC guarantees that you can renew your policy every year, up to age 100. However, if you do not pay premiums within 31 days after the premium due date, your policy will b terminated and you may lose the coverage of this policy."
 		}
-	}
+	},
+	"login": "Login",
+	"message-error": "Please login again"
 }

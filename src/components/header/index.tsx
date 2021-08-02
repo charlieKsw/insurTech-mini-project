@@ -24,11 +24,12 @@ export const Header = (props: any) => {
 
 	const toPage = (page: string) => {
 		let redirection = null;
+		let responseTxt = <Trans i18nKey="header.logout-success" />;
 		switch (page) {
 			case 'logout':
 				setIsAuth(false);
 				localStorage.clear();
-				message.success(`Logout Success`);
+				message.success(responseTxt);
 				redirection = `/`;
 				break;
 			default:

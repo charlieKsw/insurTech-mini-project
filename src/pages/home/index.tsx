@@ -13,10 +13,12 @@ const onFinishFailed = (errorInfo: any) => {
 };
 
 const onFinish = async (values: any) => {
+	let responseSuccessTxt = <Trans i18nKey="home.submit-success" />;
+	let responseFailedTxt = <Trans i18nKey="home.submit-failed" />;
 	if (values && values.length > 0) {
-		return message.success(`Submit Success - Our customer support team will contact you soon`);
+		return message.success(responseSuccessTxt);
 	}
-	return message.error(`Submit Failed - Please contact info@gmail.com for further assistance`);
+	return message.error(responseFailedTxt);
 };
 
 const renderChild = ({ isAuth, setIsAuth, formType, setFormType }: any) => {

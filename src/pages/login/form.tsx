@@ -15,6 +15,7 @@ import { colors } from '../../config/style';
 
 // Type Model
 import { LoginResult } from '../../models/auth';
+import { Trans } from 'react-i18next';
 
 const LoginForm = () => {
 	const { login } = useAuthStore();
@@ -25,9 +26,10 @@ const LoginForm = () => {
 		// let password = 'MCC001!';
 
 		const result: LoginResult = await login(username, password);
+		let responseTxt = <Trans i18nKey="header.login-success" />;
 		if (result && result['success']) {
 			if (result['redirect']) {
-				message.success(`Login Success`);
+				message.success(responseTxt);
 				return history.push(result['redirect']);
 			}
 			return message.error(`Login Failed - Incorrect Password / Email`);
@@ -41,7 +43,9 @@ const LoginForm = () => {
 
 	return (
 		<div style={{ minWidth: 300 }}>
-			<h2 style={{ color: colors.white }}>Login</h2>
+			<h2 style={{ color: colors.white }}>
+				<Trans i18nKey="login">Login</Trans>
+			</h2>
 			<Line position={'center'} color={colors.white} height={2} />
 			{/* Form */}
 			<div style={{ maxWidth: 400 }}>

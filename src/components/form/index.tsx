@@ -11,6 +11,7 @@ import { colors } from '../../config/style';
 
 // Utils
 import { toCamelCase } from '../../utils/transformText';
+import { Trans } from 'react-i18next';
 
 interface FormProps {
 	fields: Array<iForm>;
@@ -142,8 +143,9 @@ export const Form = (props: FormProps) => {
 
 				{/* Complete */}
 				<AntdForm.Item>
+					{console.log('submitBtnName', submitBtnName)}
 					<Button
-						buttonName={submitBtnName}
+						buttonName={<Trans i18nKey={submitBtnName.toLowerCase()}>{submitBtnName}</Trans>}
 						htmlType={submitBtnType}
 						style={{
 							borderColor: colors.linearGreen,

@@ -1,4 +1,8 @@
 {
+	"header": {
+		"login-success": "登入成功",
+		"logout-success": "登出成功"
+	},
 	"home": {
 		"header": "#首個以區塊鏈技術打造的醫療生態系統",
 		"subheader": "一站式應用解決方案，讓您的醫療費用得到保障",
@@ -7,7 +11,9 @@
 		"login": "登入",
 		"logout": "登出",
 		"select-country": "選擇語言",
-		"get-quote": "立即報價"
+		"get-quote": "立即報價",
+		"submit-success": "提交成功 - 我們的客戶團隊會盡快與您聯繫。",
+		"submit-failed": "提交失敗 - 請聯繫 info@gmail.com 以獲得進一步幫助。"
 	},
 	"components": {
 		"switch-button-Standard": "標準計劃",
@@ -38,5 +44,7 @@
 			"footer-note-3": "(3) 除保障表內的保障項目額外醫療保障外，所有保障項目均不設醫院病房級別選擇的限制。",
 			"footer-note-4": "(5) MCC保證你可終身續保。然而，若你於保費到期日後31內仍未繳交保費，你的保單將被終止，保障亦隨之結束。"
 		}
-	}
+	},
+	"login": "登入",
+	"message-error": "請重新登入"
 }
