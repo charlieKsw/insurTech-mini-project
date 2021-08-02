@@ -5,6 +5,8 @@ import { message } from 'antd';
 // Components
 import { MainContainer, SubmitForm } from '../../components';
 import { SwitchButton } from '../../components/switchButton';
+import { Trans } from 'react-i18next';
+import { withTrans } from '../../i18n/withTrans';
 
 const onFinishFailed = (errorInfo: any) => {
 	console.log('Failed:', errorInfo);
@@ -28,8 +30,14 @@ const renderChild = ({ isAuth, setIsAuth, formType, setFormType }: any) => {
 					justifyContent: 'center'
 				}}
 			>
-				<h1 style={{ fontSize: 28 }}>Which plan should I choose?</h1>
-				<h3 style={{ fontSize: 16 }}>Explanations provided by actuaries, doctors, and claims officers</h3>
+				<h1 style={{ fontSize: 28 }}>
+					<Trans i18nKey="home.plan-title">Which plan should I choose?</Trans>
+				</h1>
+				<h3 style={{ fontSize: 16 }}>
+					<Trans i18nKey="home.plan-subtitle">
+						Explanations provided by actuaries, doctors, and claims officers
+					</Trans>
+				</h3>
 			</div>
 
 			{/* Form */}
@@ -77,4 +85,4 @@ const HomePage = () => {
 	);
 };
 
-export default observer(HomePage);
+export default observer(withTrans(HomePage));

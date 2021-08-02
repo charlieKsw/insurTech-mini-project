@@ -1,3 +1,6 @@
+import React from 'react';
+import { Trans } from 'react-i18next';
+
 export const dataSource = [
 	{
 		key: '1',
@@ -26,12 +29,18 @@ export const columns = [
 		title: '',
 		dataIndex: 'name',
 		key: 'name',
+		render: (value: string, items: any) => {
+			return <Trans i18nKey={`components.submitForm.standard-plan-information-${items['key']}`}>{value}</Trans>;
+		},
 		width: 310
 	},
 	{
-		title: 'Standard Plan',
+		title: <Trans i18nKey="components.submitForm.standard-plan">Standard Plan</Trans>,
 		dataIndex: 'information',
 		key: 'information',
+		render: (value: string, items: any) => {
+			return <Trans i18nKey={`components.submitForm.standard-plan-content-${items['key']}`}>{value}</Trans>;
+		},
 		width: 310
 	}
 ];
@@ -64,12 +73,18 @@ export const columns2 = [
 		title: '',
 		dataIndex: 'name',
 		key: 'name',
+		render: (value: string, items: any) => {
+			return <Trans i18nKey={`components.submitForm.premium-plan-information-${items['key']}`}>{value}</Trans>;
+		},
 		width: 310
 	},
 	{
-		title: 'Premium Plan',
+		title: <Trans i18nKey="components.submitForm.premium-plan">Premium Plan</Trans>,
 		dataIndex: 'information',
 		key: 'information',
+		render: (value: string, items: any) => {
+			return <Trans i18nKey={`components.submitForm.premium-plan-content-${items['key']}`}>{value}</Trans>;
+		},
 		width: 310
 	}
 ];

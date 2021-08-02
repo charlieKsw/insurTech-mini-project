@@ -1,0 +1,42 @@
+{
+	"home": {
+		"header": "#首個以區塊鏈技術打造的醫療生態系統",
+		"subheader": "一站式應用解決方案，讓您的醫療費用得到保障",
+		"plan-title": "睇緊邊總計劃比較適合自己？",
+		"plan-subtitle": "比你更着緊的註冊醫護及客服專員為你服務",
+		"login": "登入",
+		"logout": "登出",
+		"select-country": "選擇語言",
+		"get-quote": "立即報價"
+	},
+	"components": {
+		"switch-button-Standard": "標準計劃",
+		"switch-button-Premium": "優質計劃",
+		"submitForm": {
+			"submit-button": "提交",
+			"standard-plan": "標準計劃",
+			"premium-plan": "優質計劃",
+			"standard-plan-information-1": "保障額",
+			"standard-plan-information-2": "訂明診斷成像檢測",
+			"standard-plan-information-3": "額外醫療保障",
+			"standard-plan-information-4": "保費",
+			"premium-plan-information-1": "保障額",
+			"premium-plan-information-2": "訂明診斷成像檢測",
+			"premium-plan-information-3": "額外醫療保障",
+			"premium-plan-information-4": "保費",
+			"standard-plan-content-1": "港幣 $420,000 / 月",
+			"standard-plan-content-2": "港幣 $20,000 / 月",
+			"standard-plan-content-3": "X",
+			"standard-plan-content-4": "港幣 $180 / 月",
+			"premium-plan-content-1": "港幣 $60,000 / 月",
+			"premium-plan-content-2": "港幣 $45,000 / 月",
+			"premium-plan-content-3": "✓",
+			"premium-plan-content-4": "港幣 $350 / 月",
+			"remarks": "註解: ",
+			"footer-note-1": "(1) 年齡指受保人上次生日時的已屆年齡。",
+			"footer-note-2": "(2) 除保障表內的保障項目1 (l)精神科治療、2 (d)康復治療，及3 (c)醫療疏忽保障外，此計劃的所有保障項目均全球適用。",
+			"footer-note-3": "(3) 除保障表內的保障項目額外醫療保障外，所有保障項目均不設醫院病房級別選擇的限制。",
+			"footer-note-4": "(5) MCC保證你可終身續保。然而，若你於保費到期日後31內仍未繳交保費，你的保單將被終止，保障亦隨之結束。"
+		}
+	}
+}

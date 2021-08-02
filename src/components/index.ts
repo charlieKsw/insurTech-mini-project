@@ -5,4 +5,4 @@ export * from './header';
 export * from './switchButton';
 export * from './loginContainer';
 export * from './mainContainer';
-export * from './submitForm ';
+export * from './submitForm';

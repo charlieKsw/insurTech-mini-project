@@ -1,0 +1,42 @@
+{
+	"home": {
+		"header": "# The 1st Blockchain Medical Ecosystem",
+		"subheader": "All-in-one app solution to get your medical expenses covered",
+		"plan-title": "Which plan should I choose?",
+		"plan-subtitle": "Explanations provided by actuaries, doctors, and claims officers",
+		"login": "Login",
+		"logout": "Logout",
+		"select-country": "Select Country",
+		"get-quote": "Get a quote"
+	},
+	"components": {
+		"switch-button-Standard": "Standard",
+		"switch-button-Premium": "Premium",
+		"submitForm": {
+			"submit-button": "Submit",
+			"standard-plan": "Standard Plan",
+			"premium-plan": "Premium Plan",
+			"standard-plan-information-1": "Benefit Limit",
+			"standard-plan-information-2": "Prescribed Diagnostic",
+			"standard-plan-information-3": "Supplementary major",
+			"standard-plan-information-4": "Price",
+			"premium-plan-information-1": "Benefit Limit",
+			"premium-plan-information-2": "Prescribed Diagnostic",
+			"premium-plan-information-3": "Supplementary major",
+			"premium-plan-information-4": "Price",
+			"standard-plan-content-1": "HKD $420,000 / Month",
+			"standard-plan-content-2": "HKD $20,000 / Month",
+			"standard-plan-content-3": "X",
+			"standard-plan-content-4": "HKD $180 / Month",
+			"premium-plan-content-1": "HKD $60,000 / Month",
+			"premium-plan-content-2": "HKD $45,000 / Month",
+			"premium-plan-content-3": "✓",
+			"premium-plan-content-4": "HKD $350 / Month",
+			"remarks": "Remarks: ",
+			"footer-note-1": "(1) Age refers to the attained age of the Insured Person as of his or her last birthday.",
+			"footer-note-2": "(2) Except for psychiatric treatments, rehabilitative care and medical negligence benefit, all benefits shall be applicable worldwide.",
+			"footer-note-3": "(3) Except for benefit item supplementary major medical benefit as stated in the Benefit Schedule, all benefits are not subject to any restriction in the choice of ward class in hospital.",
+			"footer-note-4": "(4) MCC guarantees that you can renew your policy every year, up to age 100. However, if you do not pay premiums within 31 days after the premium due date, your policy will b terminated and you may lose the coverage of this policy."
+		}
+	}
+}

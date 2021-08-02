@@ -6,8 +6,9 @@ import { dataSource, dataSource2 } from './mockData';
 import { ButtonHtmlType } from '../button/types';
 
 // Style
-import { Button } from '../';
+import { Button } from '..';
 import { CustomTable } from './customTable';
+import { Trans } from 'react-i18next';
 
 interface FormProps {
 	isAuth: boolean;
@@ -62,6 +63,7 @@ export const SubmitForm = (props: FormProps) => {
 		}
 		form.resetFields();
 	};
+
 	return (
 		<div>
 			<AntdForm form={form} onFinishFailed={onFinishFailed || undefined}>
@@ -71,26 +73,25 @@ export const SubmitForm = (props: FormProps) => {
 					</div>
 					<Button
 						className="form-submit-button"
-						buttonName={submitBtnName}
+						buttonName={<Trans i18nKey="components.submitForm.submit-button">{submitBtnName}</Trans>}
 						htmlType={submitBtnType}
 						onClick={() => submitForm(formType)}
 					/>
 					<div style={{ margin: '20px auto' }}>
-						<span style={{ fontWeight: 'bold' }}>Remarks:</span>
-						<p>(1) Age refers to the attained age of the Insured Person as of his or her last birthday.</p>
+						<span style={{ fontWeight: 'bold' }}>
+							<Trans i18nKey="components.submitForm.remarks">Remarks</Trans>
+						</span>
 						<p>
-							(2) Except for psychiatric treatments, rehabilitative care and medical negligence benefit,
-							all benefits shall be applicable worldwide.
+							<Trans i18nKey="components.submitForm.footer-note-1" />
 						</p>
 						<p>
-							(3) Except for benefit item supplementary major medical benefit as stated in the Benefit
-							Schedule, all benefits are not subject to any restriction in the choice of ward class in
-							hospital.
+							<Trans i18nKey="components.submitForm.footer-note-2" />
 						</p>
 						<p>
-							(4) MCC guarantees that you can renew your policy every year, up to age 100. However, if you
-							do not pay premiums within 31 days after the premium due date, your policy will be
-							terminated and you may lose the coverage of this policy.
+							<Trans i18nKey="components.submitForm.footer-note-3" />
+						</p>
+						<p>
+							<Trans i18nKey="components.submitForm.footer-note-4" />
 						</p>
 					</div>
 				</AntdForm.Item>

@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
+import { Trans } from 'react-i18next';
 
 // Components
 import { Button, Header } from '../../components';
 import { colors, backgroundImg } from '../../config/style';
+import { withTrans } from '../../i18n/withTrans';
 
 const BACKGROUND_IMAGE = `assets/${backgroundImg}`;
 
@@ -43,11 +45,17 @@ export const MainContainer = (props: MainContainerProps) => {
 					backgroundImage: `url(${BACKGROUND_IMAGE})`
 				}}
 			>
-				<h1 style={{ color: colors.white, fontSize: 25 }}># The 1st Blockchain Medical Ecosystem</h1>
+				<h1 style={{ color: colors.white, fontSize: 25 }}>
+					<Trans i18nKey="home.header"># The 1st Blockchain Medical Ecosystem</Trans>
+				</h1>
 				<h3 style={{ color: colors.white, fontSize: 16, marginBottom: 15 }}>
-					All-in-one app solution to get your medical expenses covered
+					<Trans i18nKey="home.subheader">All-in-one app solution to get your medical expenses covered</Trans>
 				</h3>
-				<Button onClick={executeScroll} buttonName="Get a quote" className="quote-price-button" />
+				<Button
+					onClick={executeScroll}
+					buttonName={<Trans i18nKey="home.get-quote" />}
+					className="quote-price-button"
+				/>
 			</div>
 
 			<div className="side">
@@ -58,3 +66,5 @@ export const MainContainer = (props: MainContainerProps) => {
 		</div>
 	);
 };
+
+export default withTrans(MainContainer);
