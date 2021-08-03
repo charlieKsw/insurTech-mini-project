@@ -6,12 +6,12 @@ import { Avatar, Dropdown, Menu, message } from 'antd';
 import { history } from '../../stores/router';
 
 //Style
-import { colors, logo } from '../../config/style';
+import { colors, brandXsLogo } from '../../config/style';
 import LanguageMenu from './languageMenu';
 import { Trans } from 'react-i18next';
 
 // Assets
-const LOGO = `assets/${logo}`;
+const LOGO = `assets/${brandXsLogo}`;
 
 export const Header = (props: any) => {
 	const { executeScroll, isAuth, setIsAuth } = props;
@@ -48,8 +48,19 @@ export const Header = (props: any) => {
 	return (
 		<div className="header">
 			{/* Logo */}
-			<div style={{ padding: '2px 0' }}>
-				<img src={LOGO} height={'auto'} width={100} alt={'header-logo'} />
+			<div style={{ flex: 1, alignContent: 'center', lineHeight: 1 }}>
+				<img src={LOGO} height={40} width={40} alt={'header-logo'} />
+				<span
+					style={{
+						paddingLeft: 5,
+						fontSize: 14,
+						color: colors.white,
+						fontWeight: 'bold',
+						textShadow: '1px 1px #0D282F'
+					}}
+				>
+					MediChainChar
+				</span>
 			</div>
 
 			{/* Button Group */}

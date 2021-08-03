@@ -16,6 +16,7 @@ let {
 	REACT_APP_TEXT_FONT_FAMILY,
 	REACT_APP_TEXT_FONT_SIZE,
 	REACT_APP_LOGO_NAME,
+	REACT_APP_BRAND_XS_LOGO_NAME,
 	REACT_APP_BG_IMG_NAME,
 	REACT_APP_LABEL_COLOR,
 	REACT_APP_SUCCESS_COLOR,
@@ -39,6 +40,7 @@ const colors = {
 };
 
 const logo = REACT_APP_LOGO_NAME || 'brandIcon.webp';
+const brandXsLogo = REACT_APP_BRAND_XS_LOGO_NAME || 'brand-xs-icon.webp';
 const backgroundImg = REACT_APP_BG_IMG_NAME || 'blockchain-bg.gif';
 
 const fonts = {
@@ -50,4 +52,4 @@ const fonts = {
 	textFontSize: REACT_APP_TEXT_FONT_SIZE || 14
 };
 
-export { colors, fonts, logo, backgroundImg };
+export { colors, fonts, logo, brandXsLogo, backgroundImg };
