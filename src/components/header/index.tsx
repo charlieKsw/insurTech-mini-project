@@ -59,7 +59,7 @@ export const Header = (props: any) => {
 						textShadow: '1px 1px #0D282F'
 					}}
 				>
-					MediChainChar
+					MediChainCharm
 				</span>
 			</div>
 
